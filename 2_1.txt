@@ -1,0 +1,5 @@
+SELECT DISTINCT user_id FROM reports
+WHERE created_at LIKE '2021%'
+UNION
+SELECT SUM(reward) FROM reports
+WHERE created_at LIKE '2022%'
